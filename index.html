@@ -1,13 +1,998 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="./src/pages/demo/show.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Phạm Kim Huệ</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .brg_gray {
+      background-color: #E4E6EB;
+    }
+
+    .width1440 {
+      width: 1440px;
+    }
+
+    .brg_yellow {
+      background-color: #FFB400;
+    }
+
+    .radius_50 {
+      border-radius: 50%;
+    }
+
+    .color_yellow {
+      color: #FFB400;
+    }
+
+    .color_gray {
+      color: #767676;
+
+    }
+
+    .padding_i {
+      padding: 5.5px 1px;
+    }
+
+    .w_h_icon {
+      width: 40px;
+      height: 37px;
+    }
+
+    .w30_h30 {
+      width: 32%;
+      height: 250px;
+    }
+
+    .w30 {
+      width: 32%;
+    }
+
+    .brg_pink:hover {
+      background-color: pink;
+      color: black;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="width1440 mx-auto flex justify-between brg_gray">
+
+    <!-- left -->
+    <div class="w-90 w-1/4 p-8 bg-white h-fit">
+
+      <!-- info -->
+      <div class="w-full text-center flex justify-between flex-col mt-3.5 mb-10">
+        <div style="width:250px; height: 250px;" class="my-4 mx-auto">
+          <img style="border-radius: 50%;" class="w-full h-full object-cover mb-4"
+            src="icon/z5056997868132_4668b1c6930726aac5fdd9215b600d05.jpg" alt="">
+        </div>
+        <h1 class="font-bold mb-3">Phạm Kim Huệ</h1>
+        <p class="mb-4">Front-End Developer</p>
+        <div class="flex justify-between items-center">
+          <a class="brg_yellow radius_50 w_h_icon text-center padding_i"
+            href="https://www.facebook.com/profile.php?id=100028897667940">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a class="brg_yellow radius_50 w_h_icon text-center padding_i" href="">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a class="brg_yellow radius_50 w_h_icon text-center padding_i" href="">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a class="brg_yellow radius_50 w_h_icon text-center padding_i" href="">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+
+
+
+        </div>
+      </div>
+
+      <!-- info2 -->
+      <div class="mb-7">
+        <div class="flex justify-between">
+          <div class="w-auto brg_yellow mb-3 px-1.5">
+            <p class="text-center">Age: </p>
+          </div>
+          <p>20</p>
+        </div>
+        <div class="flex justify-between">
+          <div class="w-auto brg_yellow mb-3 px-1.5">
+            <p class="text-center">Residence:</p>
+          </div>
+          <p>Ha Noi-Viet Nam</p>
+        </div>
+        <div class="flex justify-between">
+          <div class="w-auto brg_yellow mb-3 px-1.5">
+            <p class="text-center">Freelance:</p>
+          </div>
+          <p class="">Avalible</p>
+        </div>
+        <div class="flex justify-between">
+          <div class="w-auto brg_yellow mb-3 px-1.5">
+            <p class="text-center">Address:</p>
+          </div>
+          <p>Ninh Binh</p>
+        </div>
+      </div>
+
+      <!-- language -->
+      <div class="mb-7">
+        <h1 class="font-bold mb-3">Language</h1>
+
+        <div class="mb-3">
+          <div class="flex justify-between mb-1.5">
+            <p>Bangla</p>
+            <p>100%</p>
+          </div>
+          <div class="w-full border h-1 bg-amber-300"></div>
+        </div>
+
+        <div class="mb-3">
+          <div class="flex justify-between mb-1.5">
+            <p>English</p>
+            <p>80%</p>
+          </div>
+          <div class="w-full border h-1 bg-amber-300"></div>
+        </div>
+
+        <div class="mb-3">
+          <div class="flex justify-between mb-1.5">
+            <p>Spanish</p>
+            <p>60%</p>
+          </div>
+          <div class="w-full border h-1 bg-amber-300"></div>
+        </div>
+      </div>
+
+      <!-- skill -->
+      <div class="mb-7">
+        <h1 class="font-bold mb-3">Skills</h1>
+        <div class="mb-3">
+          <div class="flex justify-between mb-1.5">
+            <p>Html</p>
+            <p>90%</p>
+          </div>
+          <div class="w-full border h-1 bg-amber-300"></div>
+        </div>
+
+        <div class="mb-3">
+          <div class="flex justify-between mb-1.5">
+            <p>CSS</p>
+            <p>85%</p>
+          </div>
+          <div class="w-full border h-1 bg-amber-300"></div>
+        </div>
+
+        <div class="mb-3">
+          <div class="flex justify-between mb-1.5">
+            <p>Js</p>
+            <p>80%</p>
+          </div>
+          <div class="w-full border h-1 bg-amber-300"></div>
+        </div>
+
+        <div class="mb-3">
+          <div class="flex justify-between mb-1.5">
+            <p>PHP</p>
+            <p>75%</p>
+          </div>
+          <div class="w-full border h-1 bg-amber-300"></div>
+        </div>
+        <div class="mb-3">
+          <div class="flex justify-between mb-1.5">
+            <p>WordPress</p>
+            <p>85%</p>
+          </div>
+          <div class="w-full border h-1 bg-amber-300"></div>
+        </div>
+      </div>
+
+      <!-- extral skills -->
+      <div class="mb-7">
+        <h1 class="font-bold mb-3">Extral Skills</h1>
+
+        <div class="">
+          <p>Bootstrap, Materialize</p>
+        </div>
+        <div class="">
+          <p>Stylus, Sass, Less</p>
+        </div>
+        <div class="">
+          <p>Gulp, Webpack, Grunt</p>
+        </div>
+        <div class="">
+          <p>GIT Knowledge</p>
+        </div>
+      </div>
+      <div class="w-full h-px border mb-10"></div>
+
+      <div class="w-full h-10 py-2 mb-3 text-center brg_yellow">
+        <a class="" href="">DOWNLOAD CV <i class="fa-regular fa-circle-down py-1"></i></a>
+      </div>
+    </div>
+    <!-- end left -->
+
+
+
+    <!-- between -->
+    <div class="w-3/4 px-8 mx-6">
+
+
+      <!-- box-1 -->
+      <div class="w-full h-auto px-8 flex border mb-20 bg-white">
+        <!-- post-left -->
+        <div class="w-4/6">
+          <div class="w-full py-10 font-sans text-5xl font-bold">
+            <p class=" mb-4">I'm Pham Thi Thanh Kim Hue</p>
+            <p><span style="color: #FFB400;">Front-End </span>Developer</p>
+          </div>
+          <p class="w-80">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eius odio aut laudantium
+            veritatis
+            molestias necessitatibus similique dignissimos magnam perferendis!</p>
+          <div class="w-2/5 py-4 brg_yellow text-center my-8 rounded-3xl">
+            <a href="">HIRE ME <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- post-right -->
+        <div class="h-96 ml-4 mt-20">
+          <img class="h-96 mr-2 object-fit" src="icon/z5057040889901_ab18b1f2d973da112f42c9610aab42c1.jpg" alt="">
+        </div>
+      </div>
+
+
+      <!-- box 2 -->
+      <div class="border text-center mb-20">
+
+        <p class="text-3xl font-bold">My Services</p>
+        <p class="w-2/4 mx-auto mt-4 mb-7 decoration-gray-500">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          Minus architecto atque odio? Harum eum, expedita aut enim est ea veniam.</p>
+
+        <div class="w-full flex flex-col">
+
+          <div class="flex justify-between mb-4">
+
+            <div class="w30_h30 flex flex-col items-center p-6 bg-white ">
+              <!-- <div class="w-100 h-100 mb-5"> -->
+              <a class="w-100 h-100" href="">
+                <i class="fa-solid fa-laptop"></i>
+              </a>
+              <!-- </div> -->
+              <h4 class="mb-4">Web Developper</h4>
+              <p>Blog, E-Commerce</p>
+            </div>
+
+            <div class="w30_h30 border flex flex-col items-center bg-white p-6">
+              <a class="w-100 h-100" href="">
+                <i class="fa-solid fa-laptop"></i>
+              </a>
+              <h4 class="mb-4">UI/UX Design</h4>
+              <p>Mobile App, Website Design</p>
+            </div>
+
+            <div class="w30_h30 border flex flex-col items-center bg-white p-6">
+              <a class="w-100 h-100" href="">
+                <i class="fa-solid fa-laptop"></i>
+              </a>
+              <h4 class="mb-4">Sound Design</h4>
+              <p>Voice Over, Beat Marking</p>
+            </div>
+
+          </div>
+          <div class="flex justify-between mb-4">
+            <div class="w30_h30 border flex flex-col items-center bg-white p-5">
+              <a class="w-100 h-100" href="">
+                <i class="fa-solid fa-laptop"></i>
+              </a>
+              <h4 class="mb-4">Game Design</h4>
+              <p>Character Design, Props & Objects</p>
+            </div>
+            <div class="w30_h30 border flex flex-col items-center bg-white p-5">
+              <a class="w-100 h-100" href="">
+                <i class="fa-solid fa-laptop"></i>
+              </a>
+              <h4 class="mb-4">Photography</h4>
+              <p>Portrait, Product Photography</p>
+            </div>
+            <div class="w30_h30 border flex flex-col items-center bg-white p-5 text-center">
+              <h4 class="m-4">Advertising</h4>
+              <div class="w-9/12">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam laborum quam maxime </p>
+              </div>
+              <a class="color_yellow font-bold mt-4" href="">ORDER NOW</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- end box 2 -->
+
+
+      <!-- box 3:  price plans -->
+      <div class="border text-center mb-20">
+
+        <p class="text-3xl font-bold">Price Plans</p>
+        <p class="w-2/4 mx-auto mt-4 mb-7 decoration-gray-500">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          Minus architecto atque odio? Harum eum, expedita aut enim est ea veniam.</p>
+
+
+        <!-- gr-item -->
+        <div class="w-full flex justify-between border">
+          <!-- box1 -->
+          <div class="w30 bg-white p-6 bg-white">
+            <p class="text-1xl font-bold m-4">Silver</p>
+            <div class="flex justify-evenly">
+              <p class="text-3xl font-bold mb-0">$0.00</p>
+            </div>
+            <p class="pl-0 text mb-4">Lorem ipsum, dolor sit ahjsdfgsdjfgasdjgfabsdaj sàgsd</p>
+            <div class="">
+              <div class="flex mb-4">
+                <a class="color_yellow mr-6" href=""><i class="fa-solid fa-check"></i></a>
+                <p>UI Design</p>
+              </div>
+              <div class="flex mb-4">
+                <a class="color_yellow mr-6" href=""><i class="fa-solid fa-check"></i></a>
+                <p>Web Development</p>
+              </div>
+              <div class="flex mb-4">
+                <a class="mr-6" href=""><i class="fa-solid fa-x"></i></a>
+                <p class="color_gray">Logo Design</p>
+              </div>
+              <div class="flex mb-4">
+                <a class="mr-6" href=""><i class="fa-solid fa-x"></i></a>
+
+                <p class="color_gray">Seo optimization</p>
+              </div>
+              <div class="flex mb-4">
+                <a class="mr-6" href=""><i class="fa-solid fa-x"></i></a>
+
+                <p class="color_gray">WordPress Intergration</p>
+              </div>
+              <div class="flex mb-4">
+                <a class="mr-6" href=""><i class="fa-solid fa-x"></i></a>
+
+                <p class="color_gray">5 Websites</p>
+              </div>
+              <div class="flex mb-4">
+                <a class="mr-6" href=""><i class="fa-solid fa-x"></i></a>
+
+                <p class="color_gray">Unlimited User</p>
+              </div>
+              <div class="flex mb-4">
+                <a class="mr-6" href=""><i class="fa-solid fa-x"></i></a>
+
+                <p class="color_gray">20 GB Bandwith</p>
+              </div>
+            </div>
+            <div style="border: 1px solid rgb(240, 231, 231);"
+              class="w-4/5 transition hover:delay-2 text-center m-auto text-xs p-2 font-bold rounded-full brg_pink color_yellow">
+              <a class="font-bold mt-4" href="">ORDER NOW</a>
+            </div>
+          </div>
+          <!-- box2 -->
+
+          <div class="w30 bg-white">
+            <p class="w-full h-10 brg_yellow pt-2">Most Popular</p>
+            <div class="pl-6 pr-6">
+              <p class="text-1xl font-bold mb-4">Gold</p>
+              <p class="text-3xl font-bold mb-0">$50.00</p>
+              <p class="pl-0 text mb-4">Lorem ipsum, dolor sit ahjsdfgsdjfgasdjgfabsdaj sàgsd</p>
+              <div class="flex justify-evenly">
+              </div>
+              <div class="">
+                <div class="flex mb-4">
+                  <a class="color_yellow mr-6" href=""><i class="fa-solid fa-check"></i></a>
+                  <p>UI Design</p>
+                </div>
+                <div class="flex mb-4">
+                  <a class="color_yellow mr-6" href=""><i class="fa-solid fa-check"></i></a>
+                  <p>Web Development</p>
+                </div>
+                <div class="flex mb-4">
+                  <a class="color_yellow mr-6" href=""><i class="fa-solid fa-check"></i></a>
+
+
+                  <p>Logo Design</p>
+                </div>
+                <div class="flex mb-4">
+                  <a class="color_yellow mr-6" href=""><i class="fa-solid fa-check"></i></a>
+                  <p>Seo optimization</p>
+                </div>
+                <div class="flex mb-4">
+                  <a class="mr-6" href=""><i class="fa-solid fa-x"></i></a>
+                  <p class="color_gray">WordPress Intergration</p>
+                </div>
+                <div class="flex mb-4">
+                  <a class="mr-6" href=""><i class="fa-solid fa-x"></i></a>
+
+                  <p class="color_gray">5 Websites</p>
+                </div>
+                <div class="flex mb-4">
+                  <a class="mr-6" href=""><i class="fa-solid fa-x"></i></a>
+
+                  <p class="color_gray">Unlimited User</p>
+                </div>
+                <div class="flex mb-4">
+                  <a class="mr-6" href=""><i class="fa-solid fa-x"></i></a>
+
+                  <p class="color_gray">20 GB Bandwith</p>
+                </div>
+              </div>
+              <div style="border: 1px solid rgb(240, 231, 231);"
+                class="w-4/5 transition hover:delay-2 text-center m-auto text-xs p-2 font-bold rounded-full brg_pink color_yellow">
+                <a class="font-bold mt-4" href="">ORDER NOW</a>
+              </div>
+            </div>
+          </div>
+
+          <!--  end - item3 -->
+          <div class="w30 bg-white p-6">
+
+            <p class="text-1xl font-bold m-4">Dimond</p>
+            <div class="flex justify-evenly">
+              <p class="text-3xl font-bold mb-0">$80.00</p>
+            </div>
+            <p class="pl-0 text mb-4">Lorem ipsum, dolor sit ahjsdfgsdjfgasdjgfabsdaj sàgsd</p>
+            <div class="">
+              <div class="flex mb-4">
+                <a class="color_yellow mr-6" href=""><i class="fa-solid fa-check"></i></a>
+
+                <p>UI Design</p>
+              </div>
+              <div class="flex mb-4">
+                <a class="color_yellow mr-6" href=""><i class="fa-solid fa-check"></i></a>
+
+                <p>Web Development</p>
+              </div>
+              <div class="flex mb-4">
+                <a class="color_yellow mr-6" href=""><i class="fa-solid fa-check"></i></a>
+
+                <p>Logo Design</p>
+              </div>
+              <div class="flex mb-4">
+                <a class="color_yellow mr-6" href=""><i class="fa-solid fa-check"></i></a>
+
+                <p>Seo optimization</p>
+              </div>
+              <div class="flex mb-4">
+                <a class="color_yellow mr-6" href=""><i class="fa-solid fa-check"></i></a>
+
+                <p>WordPress Intergration</p>
+              </div>
+              <div class="flex mb-4">
+                <a class="color_yellow mr-6" href=""><i class="fa-solid fa-check"></i></a>
+
+                <p>5 Websites</p>
+              </div>
+              <div class="flex mb-4">
+                <a class="color_yellow mr-6" href=""><i class="fa-solid fa-check"></i></a>
+
+                <p>Unlimited User</p>
+              </div>
+              <div class="flex mb-4">
+                <a class="color_yellow mr-6" href=""><i class="fa-solid fa-check"></i></a>
+
+                <p>20 GB Bandwith</p>
+              </div>
+            </div>
+            <div style="border: 1px solid rgb(240, 231, 231);"
+              class="w-4/5 transition hover:delay-2 text-center m-auto text-xs p-2 font-bold rounded-full brg_pink color_yellow">
+              <a class="font-bold mt-4" href="">ORDER NOW</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- box 4: recommendations -->
+      <div class="text-center mb-20">
+        <p class="text-3xl font-bold">Price Plans</p>
+        <p class="w-2/4 mx-auto mt-4 mb-10 decoration-gray-500">Lorem, ipsum dolor sit amet consectetur adipisicing
+          elit.
+          Minus architecto atque odio? Harum eum, expedita aut enim est ea veniam.</p>
+        <div class="w-full flex justify-between">
+          <div class="w30 bg-white bg-white p-4">
+            <div class="mb-4">
+              <i class="fa-regular fa-star-half-stroke"></i>
+              <i class="fa-regular fa-star-half-stroke"></i>
+              <i class="fa-regular fa-star-half-stroke"></i>
+              <i class="fa-regular fa-star-half-stroke"></i>
+              <i class="fa-regular fa-star-half-stroke"></i>
+            </div>
+            <h4 class="mb-4">Great Quality!</h4>
+            <p>Lorem ipsum dolor sit amet consectetut. Eveniet ipsa impedit minus quo quos perferendis?</p>
+            <div class="flex justify-evenly mt-6">
+              <div style="width:100px; height: 100px;">
+                <img style="border-radius: 50%;" class="w-full h-full object-cover mb-4"
+                  src="quna-ly-mau-sac-tren-photoshop-Goldmouse-2.jpg" alt="">
+              </div>
+              <div class="pl-3 pt-6">
+                <h4>James Gouse</h4>
+                <p>Graphic Designer</p>
+              </div>
+            </div>
+          </div>
+          <div class="w30 bg-white bg-white p-4">
+            <div class="mb-4">
+              <i class="fa-regular fa-star-half-stroke"></i>
+              <i class="fa-regular fa-star-half-stroke"></i>
+              <i class="fa-regular fa-star-half-stroke"></i>
+              <i class="fa-regular fa-star-half-stroke"></i>
+              <i class="fa-regular fa-star-half-stroke"></i>
+            </div>
+            <h4 class="mb-4">Great Quality!</h4>
+            <p>Lorem ipsum dolor sit amet consectetut. Eveniet ipsa impedit minus quo quos perferendis?</p>
+            <div class="flex justify-evenly mt-6">
+              <div style="width:100px; height: 100px;">
+                <img style="border-radius: 50%;" class="w-full h-full object-cover mb-4"
+                  src="quna-ly-mau-sac-tren-photoshop-Goldmouse-2.jpg" alt="">
+              </div>
+              <div class="pl-3 pt-6">
+                <h4>James Gouse</h4>
+                <p>Graphic Designer</p>
+              </div>
+            </div>
+          </div>
+          <div class="w30 bg-white bg-white p-4">
+            <div class="mb-4">
+              <i class="fa-regular fa-star-half-stroke"></i>
+              <i class="fa-regular fa-star-half-stroke"></i>
+              <i class="fa-regular fa-star-half-stroke"></i>
+              <i class="fa-regular fa-star-half-stroke"></i>
+              <i class="fa-regular fa-star-half-stroke"></i>
+            </div>
+            <h4 class="mb-4">Great Quality!</h4>
+            <p>Lorem ipsum dolor sit amet consectetut. Eveniet ipsa impedit minus quo quos perferendis?</p>
+            <div class="flex justify-evenly mt-6">
+              <div style="width:100px; height: 100px;">
+                <img style="border-radius: 50%;" class="w-full h-full object-cover mb-4"
+                  src="quna-ly-mau-sac-tren-photoshop-Goldmouse-2.jpg" alt="">
+              </div>
+              <div class="pl-3 pt-6">
+                <h4>James Gouse</h4>
+                <p>Graphic Designer</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- box5: education -->
+      <div class="text-center mb-20">
+        <p class="text-3xl font-bold">Education</p>
+        <p class="w-2/4 mx-auto mt-4 mb-10 decoration-gray-500">Lorem, ipsum dolor sit amet consectetur adipisicing
+          elit.
+          Minus architecto atque odio? Harum eum, expedita aut enim est ea veniam.</p>
+
+        <!-- gr-item -->
+        <div class="bg-white">
+
+
+          <!-- gr-item 1 -->
+          <div class="w-full pt-6 pb-6 pl-5 pr-5 border flex">
+
+            <!-- box- left -->
+
+            <div class="w-1.5/6 mr-52">
+              <h4 class="mb-4">University Of Toronto</h4>
+              <div class="flex justify-between w-full">
+                <h5>Student</h5>
+                <p class="p-0.5 text-xs bg-orange-400 ml-4">Jan 2023 - Dec 2025</p>
+              </div>
+            </div>
+
+            <!-- box- right -->
+            <div class="w-3/6 text-left">
+              <h4 class="mb-4 ">Certificate Of Web Training</h4>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores adipisci laudantium veritatis
+                nihil aspernatur id rerum necessitatibus similique error, soluta quam omnis provident maxime quia
+                voluptatum officiis iste eligendi quis.</p>
+            </div>
+            <!--end box- right -->
+
+          </div>
+          <!-- end gr-item 1 -->
+          <!-- gr-item 1 -->
+          <div class="w-full pt-6 pb-6 pl-5 pr-5 border flex">
+
+            <!-- box- left -->
+
+            <div class="w-1.5/6 mr-52">
+              <h4 class="mb-4">University Of Toronto</h4>
+              <div class="flex justify-between w-full">
+                <h5>Student</h5>
+                <p class="p-0.5 text-xs bg-orange-400 ml-4">Jan 2023 - Dec 2025</p>
+              </div>
+            </div>
+
+            <!-- box- right -->
+            <div class="w-3/6 text-left">
+              <h4 class="mb-4 ">Certificate Of Web Training</h4>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores adipisci laudantium veritatis
+                nihil aspernatur id rerum necessitatibus similique error, soluta quam omnis provident maxime quia
+                voluptatum officiis iste eligendi quis.</p>
+            </div>
+            <!--end box- right -->
+
+          </div>
+          <!-- end gr-item 1 -->
+          <!-- gr-item 1 -->
+          <div class="w-full pt-6 pb-6 pl-5 pr-5 border flex">
+
+            <!-- box- left -->
+
+            <div class="w-1.5/6 mr-52">
+              <h4 class="mb-4">University Of Toronto</h4>
+              <div class="flex justify-between w-full">
+                <h5>Student</h5>
+                <p class="p-0.5 text-xs bg-orange-400 ml-4">Jan 2023 - Dec 2025</p>
+              </div>
+            </div>
+
+            <!-- box- right -->
+            <div class="w-3/6 text-left">
+              <h4 class="mb-4 ">Certificate Of Web Training</h4>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores adipisci laudantium veritatis
+                nihil aspernatur id rerum necessitatibus similique error, soluta quam omnis provident maxime quia
+                voluptatum officiis iste eligendi quis.</p>
+            </div>
+            <!--end box- right -->
+
+          </div>
+          <!-- end gr-item 1 -->
+
+
+
+
+
+        </div>
+        <!-- end gr-item -->
+
+      </div>
+      <!--  -->
+      <!-- box6: word history -->
+      <div class="border text-center mb-20">
+        <p class="text-3xl font-bold">Word History</p>
+        <p class="w-2/4 mx-auto mt-4 mb-10 decoration-gray-500">Lorem, ipsum dolor sit amet consectetur adipisicing
+          elit.
+          Minus architecto atque odio? Harum eum, expedita aut enim est ea veniam.</p>
+
+        <!-- gr-item -->
+        <div class="bg-white">
+
+
+          <!-- gr-item 1 -->
+          <div class="w-full pt-6 pb-6 pl-5 pr-5 border flex">
+
+            <!-- box- left -->
+
+            <div class="w-1.5/6 mr-52">
+              <h4 class="mb-4">University Of Toronto</h4>
+              <div class="flex justify-between w-full">
+                <h5>Student</h5>
+                <p class="p-0.5 text-xs bg-orange-400 ml-4">Jan 2023 - Dec 2025</p>
+              </div>
+            </div>
+
+            <!-- box- right -->
+            <div class="w-3/6 text-left">
+              <h4 class="mb-4 ">Certificate Of Web Training</h4>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores adipisci laudantium veritatis
+                nihil aspernatur id rerum necessitatibus similique error, soluta quam omnis provident maxime quia
+                voluptatum officiis iste eligendi quis.</p>
+            </div>
+            <!--end box- right -->
+
+          </div>
+          <!-- end gr-item 1 -->
+          <!-- gr-item 1 -->
+          <div class="w-full pt-6 pb-6 pl-5 pr-5 border flex">
+
+            <!-- box- left -->
+
+            <div class="w-1.5/6 mr-52">
+              <h4 class="mb-4">University Of Toronto</h4>
+              <div class="flex justify-between w-full">
+                <h5>Student</h5>
+                <p class="p-0.5 text-xs bg-orange-400 ml-4">Jan 2023 - Dec 2025</p>
+              </div>
+            </div>
+
+            <!-- box- right -->
+            <div class="w-3/6 text-left">
+              <h4 class="mb-4 ">Certificate Of Web Training</h4>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores adipisci laudantium veritatis
+                nihil aspernatur id rerum necessitatibus similique error, soluta quam omnis provident maxime quia
+                voluptatum officiis iste eligendi quis.</p>
+            </div>
+            <!--end box- right -->
+
+          </div>
+          <!-- end gr-item 1 -->
+          <!-- gr-item 1 -->
+          <div class="w-full pt-6 pb-6 pl-5 pr-5 border flex">
+
+            <!-- box- left -->
+
+            <div class="w-1.5/6 mr-52">
+              <h4 class="mb-4">University Of Toronto</h4>
+              <div class="flex justify-between w-full">
+                <h5>Student</h5>
+                <p class="p-0.5 text-xs bg-orange-400 ml-4">Jan 2023 - Dec 2025</p>
+              </div>
+            </div>
+
+            <!-- box- right -->
+            <div class="w-3/6 text-left">
+              <h4 class="mb-4 ">Certificate Of Web Training</h4>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores adipisci laudantium veritatis
+                nihil aspernatur id rerum necessitatibus similique error, soluta quam omnis provident maxime quia
+                voluptatum officiis iste eligendi quis.</p>
+            </div>
+            <!--end box- right -->
+
+          </div>
+          <!-- end gr-item 1 -->
+
+
+
+
+
+        </div>
+        <!-- end gr-item -->
+
+      </div>
+      <!--  -->
+
+      <!-- box 7: Portfolio -->
+      <div class="border text-center mb-20">
+        <p class="text-3xl font-bold">Word History</p>
+        <p class="w-2/4 mx-auto mt-4 mb-10 decoration-gray-500">Lorem, ipsum dolor sit amet consectetur adipisicing
+          elit.
+          Minus architecto atque odio? Harum eum, expedita aut enim est ea veniam.</p>
+        <div class="w-full border mt-5 mb-4">
+          <ul class="w-3/5 m-auto flex justify-between font-bold">
+            <li class="hover:decoration-orange-800"><a href="">All Categories</a></li>
+            <li class="hover:decoration-orange-800"><a href="">UI Design</a></li>
+            <li class="hover:decoration-orange-800"><a href="">Web Templates</a></li>
+            <li class="hover:decoration-orange-800"><a href="">Logo</a></li>
+            <li class="hover:decoration-orange-800"><a href="">Branding</a></li>
+          </ul>
+        </div>
+
+
+        <div class="">
+
+          <div class="w-full flex justify-between mb-10">
+            <div class="w-72 h-72 brg_yellow">
+              <input type="file">
+            </div>
+            <div class="w-72 h-72">
+              <img class="w-72 h-72" src="icon/Screenshot 2024-01-09 224525.png" alt="">
+            </div>
+            <div class="w-72 h-72">
+              <img class="w-72 h-72" src="icon/Screenshot 2024-01-09 224525.png" alt="">
+            </div>
+          </div>
+          <div class="w-full flex justify-between">
+            <div class="w-72 h-72">
+              <img class="w-72 h-72" src="icon/Screenshot 2024-01-09 224525.png" alt="">
+            </div>
+            <div class="w-72 h-72">
+              <img class="w-72 h-72" src="icon/Screenshot 2024-01-09 224525.png" alt="">
+            </div>
+            <div class="w-72 h-72">
+              <img class="w-72 h-72" src="icon/Screenshot 2024-01-09 224525.png" alt="">
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- boxx 8: Blog -->
+      <div class="border text-center mb-20">
+        <p class="text-3xl font-bold">Blog</p>
+        <p class="w-2/4 mx-auto mt-4 mb-10 decoration-gray-500">Lorem, ipsum dolor sit amet consectetur adipisicing
+          elit.
+          Minus architecto atque odio? Harum eum, expedita aut enim est ea veniam.</p>
+        <div class="w-full flex justify-between">
+
+          <div class="bg-white w30">
+            <img class="w-full" src="icon/Screenshot 2024-01-09 224525.png" alt="">
+            <div class="p-4">
+              <h5>How To Make Web Template</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, beatae.</p>
+              <a class="color_yellow font-bold mt-4" href="">Learn More <i class="fa-solid fa-greater-than"></i></a>
+
+            </div>
+          </div>
+          <div class="bg-white w30">
+            <img class="w-full" src="icon/Screenshot 2024-01-09 224525.png" alt="">
+            <div class="p-4">
+              <h5>How To Make Web Template</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, beatae.</p>
+              <a class="color_yellow font-bold mt-4" href="">Learn More <i class="fa-solid fa-greater-than"></i></a>
+
+            </div>
+          </div>
+          <div class="bg-white w30">
+            <img class="w-full" src="icon/Screenshot 2024-01-09 224525.png" alt="">
+            <div class="p-4">
+              <h5>How To Make Web Template</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, beatae.</p>
+              <a class="color_yellow font-bold mt-4" href="">Learn More <i class="fa-solid fa-greater-than"></i></a>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- boxx 9:  -->
+      <div class="flex justify-between w-full border mb-20">
+
+
+        <div class="w-2/3 mr-7">
+          <p class="font-bold text-3xl mb-10">Leave Us Your Info</p>
+          <div class="w-full p-4 bg-white">
+            <label for="">Your Full Name (Required)</label> <br> <input
+              class="w-full h-10 bg-gray-200 mb-4 outline-none p-2" type="text">
+            <label for="">Your Full Name (Required)</label> <br> <input
+              class="w-full h-10 bg-gray-200 mb-4 outline-none p-2" type="text">
+            <label for="">Your Full Name (Required)</label> <br> <input
+              class="w-full h-10 bg-gray-200 mb-4 outline-none p-2" type="text">
+            <label for="">Your Message</label> <br>
+            <textarea class="outline-none bg-gray-200 mb-4 p-2" name="" id="" cols="70" rows="10"></textarea>
+            <button class="px-4 py-2 m-auto brg_yellow font-bold">SEND MESSAGE</button>
+          </div>
+        </div>
+
+        <div class="w-2/6 ">
+          <p class="font-bold text-3xl mb-10">Contact Information</p>
+          <div class="w-full border mb-2 bg-white">
+            <div class="text-center w-full mt-6 mb-6">
+              <a class="radius_50 brg_yellow px-4 py-3 text-2xl" href="">
+                <i class="fa-solid fa-book"></i>
+              </a>
+            </div>
+            <div class="flex w-full justify-between p-2">
+              <p>
+                Country:
+              </p>
+              <p>Bangladesh</p>
+            </div>
+            <div class="flex w-full justify-between p-2">
+              <p>
+                City:
+              </p>
+              <p>Dhaka</p>
+            </div>
+            <div class="flex w-full justify-between p-2">
+              <p>
+                Streat:
+              </p>
+              <p>35: Vhatara,</p>
+            </div>
+          </div>
+
+          <div class="w-full border mb-2 bg-white">
+            <div class="text-center w-full mt-6 mb-6">
+              <a class="radius_50 brg_yellow px-4 py-3 text-2xl" href="">
+                <i class="fa-solid fa-book"></i>
+              </a>
+            </div>
+            <div class="flex w-full justify-between p-2">
+              <p>
+                Email:
+              </p>
+              <p>Youremaiul@Gmail.com</p>
+            </div>
+            <div class="flex w-full justify-between p-2">
+              <p>
+                Skype:
+              </p>
+              <p>@Yourusername</p>
+            </div>
+            <div class="flex w-full justify-between p-2">
+              <p>
+                Telegram:
+              </p>
+              <p>@Yourusername</p>
+            </div>
+          </div>
+          <div class="w-full border mb-2 bg-white">
+            <div class="text-center w-full mt-6 mb-6">
+              <a class="radius_50 brg_yellow px-4 py-3 text-2xl" href="">
+                <i class="fa-solid fa-book"></i>
+              </a>
+            </div>
+            <div class="flex w-full justify-between p-2">
+              <p>
+                Support Services:
+              </p>
+              <p>15369</p>
+            </div>
+            <div class="flex w-full justify-between p-2">
+              <p>
+                Office:
+              </p>
+              <p>0585043226</p>
+            </div>
+            <div class="flex w-full justify-between p-2">
+              <p>
+                Personal:
+              </p>
+              <p>0585043226</p>
+            </div>
+          </div>
+
+
+        </div>
+
+
+
+      </div>
+
+      <!-- box 10  -->
+      <div class="w-full mb-20">
+        <img class="w-full " src="icon/Screenshot 2024-01-10 013402.png" alt="">
+      </div>
+      <div class="w-full h-30 flex justify-between mb-5">
+        <img src="icon/Screenshot 2024-01-09 224525.png" alt="">
+        <img src="icon/Screenshot 2024-01-09 224525.png" alt="">
+        <img src="icon/Screenshot 2024-01-09 224525.png" alt="">
+        <img src="icon/Screenshot 2024-01-09 224525.png" alt="">
+      </div>
+
+      <div class="w-full h-10 bg-white flex items-center">
+        <p class="pl-80">2021 All Rights Reserved.Ojjomedia</p>
+      </div>
+
+    </div>
+
+
+    <!-- right -->
+    <div class="w-28 bg-zinc-400 text-center">
+
+      <div class="text-center w-full mt-6">
+        <a class="radius_50 brg_yellow px-5 py-3 text-2xl" href="">
+          <i class="fa-solid fa-moon"></i>
+        </a>
+      </div>
+
+      <div class="mt-30">
+        <div class="text-center w-full mt-40">
+          <a class="radius_50 brg_yellow px-4 py-3 text-2xl" href="">
+            <i class="fa-solid fa-house"></i>
+
+          </a>
+        </div>
+        <div class="text-center w-full mt-10">
+          <a class="radius_50 brg_yellow px-4 py-3 text-2xl" href="">
+            <i class="fa-regular fa-envelope"></i>
+          </a>
+        </div>
+        <div class="text-center w-full mt-10">
+          <a class="radius_50 brg_yellow px-4 py-3 text-2xl" href="">
+            <i class="fa-regular fa-envelope"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+    <!-- end right -->
+  </div>
+
+
+
+  </div>
+</body>
+
 </html>
